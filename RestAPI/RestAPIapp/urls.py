@@ -4,4 +4,6 @@ from . import views
 urlpatterns = [
     path('say_hello/', views.say_hello, name='say_hello'),
     path('getapi/', views.getdata, name='getdata'),
+    path('postapi/', views.postdata, name='postdata'),
+    path('putapi/<int:pk>/', views.putdata, name='putdata'),
 ]
